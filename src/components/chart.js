@@ -27,7 +27,7 @@ const Chart = () => {
                     const r=getDateRange();
                     console.log(r);
                     const resolution=chartConfig[filter].resolution;
-                    const result=await fetchData(stockSymbol,resolution,r.startTimestampUnix,r.endTimeStampUnixr);
+                    const result=await fetchData(stockSymbol,resolution,r.startTimestampUnix,r.endTimeStampUnix);
                     setData(formatData(result));
                 }
                 catch(error){
